@@ -1,0 +1,17 @@
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/*.tfvars
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Fichiers sensibles
+*.pem
+*.key
+cloudforge_state.json
+monitor.log

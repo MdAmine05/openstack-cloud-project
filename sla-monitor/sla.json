@@ -1,0 +1,1495 @@
+{
+  "sla": {
+    "name": "OpenStack Instance Availability SLA",
+    "version": "1.0",
+    "created_at": "2026-04-09",
+    "provider": "OpenStack DevStack",
+    "project": "demo",
+    "objective": {
+      "metric": "instance_availability",
+      "target_percentage": 99.5,
+      "evaluation_period": "daily",
+      "monitoring_interval_minutes": 5
+    },
+    "instances_monitored": [
+      {
+        "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+        "name": "centos-terraform-vm",
+        "status": "SHUTOFF"
+      },
+      {
+        "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+        "name": "ubuntu-saas",
+        "status": "SHUTOFF"
+      },
+      {
+        "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+        "name": "cirros-vm",
+        "status": "SHUTOFF"
+      }
+    ],
+    "reports": [
+      {
+        "timestamp": "2026-04-09T20:59:05.262435",
+        "total_instances": 3,
+        "active_instances": 0,
+        "stopped_instances": 3,
+        "error_instances": 0,
+        "availability_percentage": 0.0,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-09T21:01:17.088116",
+        "total_instances": 3,
+        "active_instances": 2,
+        "stopped_instances": 1,
+        "error_instances": 0,
+        "availability_percentage": 66.67,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-09T21:02:51.519451",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T20:35:23.154533",
+        "total_instances": 3,
+        "active_instances": 2,
+        "stopped_instances": 1,
+        "error_instances": 0,
+        "availability_percentage": 66.67,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T20:40:16.316796",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T20:45:16.887443",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T20:50:20.505803",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T20:55:12.886912",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:00:06.898990",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:05:04.792323",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:10:06.423982",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:15:06.183635",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:20:04.632518",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:25:05.301791",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:30:05.312237",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:35:04.887775",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:40:07.460506",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-13T21:45:05.956094",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T12:25:25.845581",
+        "total_instances": 3,
+        "active_instances": 0,
+        "stopped_instances": 3,
+        "error_instances": 0,
+        "availability_percentage": 0.0,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T12:30:06.311844",
+        "total_instances": 3,
+        "active_instances": 0,
+        "stopped_instances": 3,
+        "error_instances": 0,
+        "availability_percentage": 0.0,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T12:35:05.867847",
+        "total_instances": 3,
+        "active_instances": 0,
+        "stopped_instances": 3,
+        "error_instances": 0,
+        "availability_percentage": 0.0,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T12:40:07.983336",
+        "total_instances": 3,
+        "active_instances": 2,
+        "stopped_instances": 1,
+        "error_instances": 0,
+        "availability_percentage": 66.67,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T12:45:05.351806",
+        "total_instances": 3,
+        "active_instances": 2,
+        "stopped_instances": 1,
+        "error_instances": 0,
+        "availability_percentage": 66.67,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T12:50:09.707560",
+        "total_instances": 3,
+        "active_instances": 2,
+        "stopped_instances": 1,
+        "error_instances": 0,
+        "availability_percentage": 66.67,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T12:55:06.266877",
+        "total_instances": 3,
+        "active_instances": 2,
+        "stopped_instances": 1,
+        "error_instances": 0,
+        "availability_percentage": 66.67,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:00:05.520950",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:05:06.625171",
+        "total_instances": 3,
+        "active_instances": 2,
+        "stopped_instances": 1,
+        "error_instances": 0,
+        "availability_percentage": 66.67,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:10:12.054129",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:15:05.725584",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:20:05.271778",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:25:06.018191",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:30:03.880054",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:35:03.926478",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:40:06.105243",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:45:05.214509",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:50:04.617749",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T13:55:05.941128",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:00:04.633127",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:05:05.524238",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:10:06.129663",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:15:04.644714",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:20:04.831922",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:25:05.489539",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:30:05.673535",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:35:04.571473",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:40:05.230532",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:45:03.960170",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:50:10.874606",
+        "total_instances": 3,
+        "active_instances": 1,
+        "stopped_instances": 2,
+        "error_instances": 0,
+        "availability_percentage": 33.33,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T14:55:06.078686",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T15:00:10.339850",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T15:05:13.033672",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T15:10:11.062609",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-14T15:15:10.385444",
+        "total_instances": 3,
+        "active_instances": 3,
+        "stopped_instances": 0,
+        "error_instances": 0,
+        "availability_percentage": 100.0,
+        "target_percentage": 99.5,
+        "sla_met": true,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "ACTIVE"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "ACTIVE"
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-04-16T02:20:13.813285",
+        "total_instances": 3,
+        "active_instances": 0,
+        "stopped_instances": 3,
+        "error_instances": 0,
+        "availability_percentage": 0.0,
+        "target_percentage": 99.5,
+        "sla_met": false,
+        "instances": [
+          {
+            "id": "e370374d-20c5-4043-aac0-234a385ec9a2",
+            "name": "centos-terraform-vm",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "40488a54-7178-4b4f-a9c2-528cfd8f616f",
+            "name": "ubuntu-saas",
+            "status": "SHUTOFF"
+          },
+          {
+            "id": "b0b74c15-dfc5-496c-b7cf-f5eaf58021d1",
+            "name": "cirros-vm",
+            "status": "SHUTOFF"
+          }
+        ]
+      }
+    ],
+    "last_check": "2026-04-16T02:20:13.816725",
+    "last_availability": 0.0,
+    "last_sla_met": false
+  }
+}
